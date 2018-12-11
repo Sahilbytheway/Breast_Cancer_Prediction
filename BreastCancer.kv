@@ -1,0 +1,248 @@
+#: import main BreastCancer
+#: import ListAdapter kivy.adapters.listadapter.ListAdapter
+#: import ListItemButton kivy.uix.listview.ListItemButton
+
+BreastCancer:
+
+<BreastCancer>:
+    orientation: "vertical"
+    radius_mean_text_input : radius_mean
+    texture_mean_text_input : texture_mean
+    perimeter_mean_text_input : perimeter_mean
+    area_mean_text_input : area_mean
+    smoothness_mean_text_input : smoothness_mean
+    compactness_mean_text_input : compactness_mean
+    concavity_mean_text_input : concavity_mean
+    concave_points_mean_text_input : concave_points_mean
+    symmetry_mean_text_input : symmetry_mean
+    fractal_dimension_mean_text_input : fractal_dimension_mean
+
+    radius_standard_error_text_input : radius_standard_error
+    texture_standard_error_text_input : texture_standard_error
+    perimeter_standard_error_text_input : perimeter_standard_error
+    area_standard_error_text_input : area_standard_error
+    smoothness_standard_error_text_input : smoothness_standard_error
+    compactness_standard_error_text_input : compactness_standard_error
+    concavity_standard_error_text_input : concavity_standard_error
+    concave_points_standard_error_text_input : concave_points_standard_error
+    symmetry_standard_error_text_input : symmetry_standard_error
+    fractal_dimension_standard_error_text_input : fractal_dimension_standard_error
+
+    radius_worst_text_input : radius_worst
+    texture_worst_text_input : texture_worst
+    perimeter_worst_text_input : perimeter_worst
+    area_worst_text_input : area_worst
+    smoothness_worst_text_input : smoothness_worst
+    compactness_worst_text_input : compactness_worst
+    concavity_worst_text_input : concavity_worst
+    concave_points_worst_text_input : concave_points_worst
+    symmetry_worst_text_input : symmetry_worst
+    fractal_dimension_worst_text_input : fractal_dimension_worst
+
+
+
+
+
+
+
+    student_list: students_list_view
+
+    padding : 10
+    spacing : 10
+
+    BoxLayout:
+        size_hint_y: None
+        height : " 30dp"
+
+        Label:
+            text: "Radius (mean)"
+        TextInput:
+            id: radius_mean
+
+        Label:
+            text: "Radius (standard error)"
+        TextInput:
+            id: radius_standard_error
+        Label:
+            text: "Radius (worst)"
+        TextInput:
+            id: radius_worst
+
+    BoxLayout:
+        size_hint_y: None
+        height : " 30dp"
+
+        Label:
+            text: "Texture (mean)"
+        TextInput:
+            id: texture_mean
+        Label:
+            text: "Texture (standard_error)"
+        TextInput:
+            id: texture_standard_error
+        Label:
+            text: "Texture (worst)"
+        TextInput:
+            id: texture_worst
+
+
+
+
+    BoxLayout:
+        size_hint_y: None
+        height : " 30dp"
+
+        Label:
+            text: "Perimeter (mean)"
+        TextInput:
+            id: perimeter_mean
+        Label:
+            text: "Perimeter (standard_error)"
+        TextInput:
+            id: perimeter_standard_error
+        Label:
+            text: "Perimeter (worst)"
+        TextInput:
+            id: perimeter_worst
+        
+        
+        
+        
+    BoxLayout:
+        size_hint_y: None
+        height : " 30dp"
+        
+        Label:
+            text: "Area (mean)"
+        TextInput:
+            id: area_mean
+        Label:
+            text: "Area (standard_error)"
+        TextInput:
+            id: area_standard_error
+        Label:
+            text: "Area (worst)"
+        TextInput:
+            id: area_worst
+
+
+    
+    BoxLayout:
+        size_hint_y: None
+        height : " 30dp"
+
+        Label:
+            text: "Smoothness (mean)"
+        TextInput:
+            id: smoothness_mean
+        Label:
+            text: "Smoothness (standard_error)"
+        TextInput:
+            id: smoothness_standard_error
+        Label:
+            text: "Smoothness (worst)"
+        TextInput:
+            id: smoothness_worst
+
+
+    BoxLayout:
+        size_hint_y: None
+        height : " 30dp"
+
+        Label:
+            text: "Compactness (mean)"
+        TextInput:
+            id: compactness_mean
+        Label:
+            text: "Compactness (standard_error)"
+        TextInput:
+            id: compactness_standard_error
+        Label:
+            text: "Compactness (worst)"
+        TextInput:
+            id: compactness_worst
+
+    BoxLayout:
+        size_hint_y: None
+        height : " 30dp"
+
+        Label:
+            text: "Concavity (mean)"
+        TextInput:
+            id: concavity_mean
+        Label:
+            text: "Concavity (standard_error)"
+        TextInput:
+            id: concavity_standard_error
+        Label:
+            text: "Concavity (worst)"
+        TextInput:
+            id: concavity_worst
+    BoxLayout:
+        size_hint_y: None
+        height : " 30dp"
+
+        Label:
+            text: "Concave Points (mean)"
+        TextInput:
+            id: concave_points_mean
+        Label:
+            text: "Concave Points (standard_error)"
+        TextInput:
+            id: concave_points_standard_error
+        Label:
+            text: "Concave Points (worst)"
+        TextInput:
+            id: concave_points_worst
+
+    BoxLayout:
+        size_hint_y: None
+        height : " 30dp"
+
+        Label:
+            text: "Symmetry (mean)"
+        TextInput:
+            id: symmetry_mean
+        Label:
+            text: "Symmetry (standard_error)"
+        TextInput:
+            id: symmetry_standard_error
+        Label:
+            text: "Symmetry (worst)"
+        TextInput:
+            id: symmetry_worst
+    BoxLayout:
+        size_hint_y: None
+        height : " 30dp"
+
+        Label:
+            text: "Fractal Dimension (mean)"
+        TextInput:
+            id: fractal_dimension_mean
+        Label:
+            text: "Fractal Dimension (standard_error)"
+        TextInput:
+            id: fractal_dimension_standard_error
+        Label:
+            text: "Fractal Dimension (worst)"
+        TextInput:
+            id: fractal_dimension_worst
+
+    BoxLayout:
+        size_hint_y: None
+        height : " 30dp"
+
+        Button:
+            text: "Submit"
+            size_hint_x: 15
+            on_press: root.submit_report()
+        Button:
+            text: "Delete"
+            size_hint_x: 15
+            on_press: root.delete_report()
+
+    ListView:
+        id: students_list_view
+        adapter:
+            ListAdapter(data=[""], cls=main.StudentListButton)
+
